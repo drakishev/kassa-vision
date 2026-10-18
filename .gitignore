@@ -84,6 +84,8 @@ AGENTS.md
 *.jpg
 *.jpeg
 *.png
+!docs/images/site.png
+!docs/images/annotator.png
 *.gif
 *.webp
 *.gguf

@@ -11,6 +11,14 @@ SPEC.loader.exec_module(guard)
 
 
 class PublicationTests(unittest.TestCase):
+    def test_only_reviewed_screenshot_bytes_are_allowed(self):
+        for name in ('docs/images/site.png', 'docs/images/annotator.png'):
+            content = (guard.ROOT / name).read_bytes()
+            self.assertEqual(list(guard.issues(name, '100644', content)), [])
+            self.assertTrue(list(guard.issues(name, '100644', content + b'private metadata')))
+            self.assertTrue(list(guard.issues('docs/images/other.png', '100644', content)))
+            self.assertTrue(list(guard.issues(name, '120000', content)))
+
     def test_staged_secret_cannot_be_hidden_by_clean_working_copy(self):
         with tempfile.TemporaryDirectory() as folder:
             root = Path(folder)

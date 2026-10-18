@@ -1,5 +1,6 @@
 """Check publishable files (or the exact Git index), without printing secret values."""
 import argparse
+import hashlib
 import re
 import shutil
 import subprocess
@@ -7,6 +8,12 @@ import tempfile
 from pathlib import Path, PurePosixPath
 
 ROOT = Path(__file__).resolve().parents[1]
+# Visually reviewed Chromium captures from synthetic fixtures only. Replacing
+# a screenshot requires reviewing its pixels and updating its exact digest.
+REVIEWED_SCREENSHOTS = {
+    'docs/images/site.png': 'f3273eec7c306609d0e68c6a9116d6bfc6899e410e74007405785550c19ad240',
+    'docs/images/annotator.png': '019d5af33a3926f633a232b3ae3bb3c92b550d5f0f1248c221be778deb5e0417',
+}
 PRIVATE_DIRS = {
     'data', 'runtime', 'models', 'cache', 'runs', 'logs', 'raw_files', 'benchmarks',
     'evaluation', 'experiments', 'review_artifacts', 'implement-stage', 'slides',
@@ -56,6 +63,10 @@ def issues(name, mode, content):
     parts = {p.lower() for p in path.parts}
     if mode not in {'100644', '100755'}:
         yield 'symlink or submodule'
+    if name in REVIEWED_SCREENSHOTS:
+        if hashlib.sha256(content).hexdigest() != REVIEWED_SCREENSHOTS[name]:
+            yield 'screenshot differs from reviewed synthetic capture'
+        return
     if parts & PRIVATE_DIRS or any(p.startswith('.venv') for p in parts):
         yield 'private or generated directory'
     if path.suffix.lower() in PRIVATE_SUFFIXES or '.sqlite' in path.name or '.db-' in path.name:
