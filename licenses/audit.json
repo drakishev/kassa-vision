@@ -1,0 +1,41 @@
+{
+  "checked_at_utc": "2026-10-17T11:23:07.640871+00:00",
+  "scope": "Actual deployed model checkpoints and primary inference adapters; not a full distribution dependency audit",
+  "components": [
+    {
+      "name": "Qwen3.8-27B",
+      "repo": "Qwen/Qwen3.8-27B",
+      "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+      "license": "Apache-2.0",
+      "commercial_use": "permitted_under_license",
+      "local_LFS_weight_files_matched": 19
+    },
+    {
+      "name": "Grounding DINO Base",
+      "repo": "IDEA-Research/grounding-dino-base",
+      "revision": "12bdfa3120f3e7ec7b434d90674b3396eccf88eb",
+      "license": "Apache-2.0",
+      "commercial_use": "permitted_under_license",
+      "local_LFS_weight_files_matched": 1
+    },
+    {
+      "name": "ByteTrack implementation",
+      "package": "supervision",
+      "version": "0.25.1",
+      "license": "MIT",
+      "commercial_use": "permitted_under_license"
+    },
+    {
+      "name": "RTMW-l Cocktail14 ONNX",
+      "code_license": "Apache-2.0",
+      "adapter": "rtmlib 0.0.16 Apache-2.0",
+      "commercial_use": "checkpoint_scope_requires_clarification",
+      "automatic_noncommercial_inference_prohibition_established": false,
+      "reason": "No separate license within downloaded ONNX SDK. Project Apache-2.0 and general maintainer statements are positive evidence, but training includes COCO-WholeBody with explicit research/noncommercial dataset terms; exact pretrained-weight permission needs clarification."
+    }
+  ],
+  "local_artifacts_verified": true,
+  "runtime_configuration_changed": false,
+  "source_manifest": "source_manifest.json",
+  "weight_integrity": "local_weight_verification.json"
+}

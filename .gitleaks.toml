@@ -1,0 +1,10 @@
+title = "Kassa Vision secret scan"
+[extend]
+useDefault = true
+
+# A Python class name can match the generic token heuristic; it is not a credential.
+[[rules]]
+id = "generic-api-key"
+[[rules.allowlists]]
+regexTarget = "secret"
+regexes = ['''^Qwen3_5ForConditionalGeneration$''']

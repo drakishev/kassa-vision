@@ -1,0 +1,4 @@
+# Preserve upstream source copies byte for byte: catalogs record their SHA-256.
+frontend/public/assets/legal-documents/*.txt -text -whitespace
+licenses/** -text -whitespace
+frontend/licenses/** -text -whitespace

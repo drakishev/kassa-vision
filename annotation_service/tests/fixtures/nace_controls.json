@@ -1,0 +1,171 @@
+[
+  {
+    "id": "ordinary_customer_arrival",
+    "state": "Клиент вошёл в помещение и подошёл к стойке со стороны посетителей. Границу служебной зоны он не пересекал и за рабочее место кассира не заходил.",
+    "expected": {
+      "V01": "not_described",
+      "V02": "not_described",
+      "V03": "not_described",
+      "V04": "not_described",
+      "V05": "not_described",
+      "V06": "not_described",
+      "V07": "not_described",
+      "V08": "not_described",
+      "parallel_service": "not_described",
+      "V09": "not_described",
+      "V11": "not_described",
+      "V12": "not_described",
+      "V10": "not_described",
+      "bag_unattended": "not_described",
+      "partial_cash_return": "not_described",
+      "V13": "not_described",
+      "V14": "not_described",
+      "V15": "not_described",
+      "safe_open": "not_described",
+      "safe_lock": "not_described",
+      "safe_key": "not_described",
+      "documents_left": "not_described"
+    },
+    "expectation_notes": {
+      "V13": "Вход на клиентскую сторону прямо противопоставлен входу за рабочее место кассира.",
+      "other_categories": "Других действий или предметов текст не описывает; отсутствие их описания не является выводом об отсутствии на видео."
+    }
+  },
+  {
+    "id": "unknown_object_handover",
+    "state": "Кассир передал клиенту небольшой предмет из рук в руки. Предмет неразличим: неизвестно, деньги это или документ. Наличие передаточного устройства не установлено. Отдельная проверка банкноты или сомнения в её подлинности в описании не упомянуты.",
+    "expected": {
+      "V01": "not_described",
+      "V02": "not_described",
+      "V03": "not_described",
+      "V04": "not_described",
+      "V05": "not_described",
+      "V06": "not_described",
+      "V07": "not_described",
+      "V08": "not_described",
+      "parallel_service": "not_described",
+      "V09": "not_described",
+      "V11": "not_described",
+      "V12": "not_described",
+      "V10": "not_described",
+      "bag_unattended": "not_described",
+      "partial_cash_return": "not_described",
+      "V13": "not_described",
+      "V14": "not_described",
+      "V15": "uncertain",
+      "safe_open": "not_described",
+      "safe_lock": "not_described",
+      "safe_key": "not_described",
+      "documents_left": "not_described"
+    },
+    "expectation_notes": {
+      "V15": "Передача из рук в руки прямо описана, но наличные и передаточное устройство не установлены: uncertain.",
+      "V12": "Нет положительного признака подозрительной банкноты или её отдельной проверки. Сама передача неизвестного предмета недостаточна даже для такого сценария сомнения.",
+      "V06": "Выдача именно наличных и пропуск их пересчёта не описаны. Нельзя получить эти признаки из передачи неизвестного предмета."
+    }
+  },
+  {
+    "id": "partial_cash_return_without_suspicion",
+    "state": "После общего пересчёта кассир вернул клиенту часть банкнот. Возврат описан как выдача согласованного остатка; отдельной проверки этих банкнот не было, подозрительность банкнот не заявлена.",
+    "expected": {
+      "V01": "not_described",
+      "V02": "not_described",
+      "V03": "not_described",
+      "V04": "not_described",
+      "V05": "not_described",
+      "V06": "not_described",
+      "V07": "not_described",
+      "V08": "not_described",
+      "parallel_service": "not_described",
+      "V09": "not_described",
+      "V11": "not_described",
+      "V12": "not_described",
+      "V10": "not_described",
+      "bag_unattended": "not_described",
+      "partial_cash_return": "described",
+      "V13": "not_described",
+      "V14": "not_described",
+      "V15": "not_described",
+      "safe_open": "not_described",
+      "safe_lock": "not_described",
+      "safe_key": "not_described",
+      "documents_left": "not_described"
+    },
+    "expectation_notes": {
+      "partial_cash_return": "Общий пересчёт и возврат части банкнот прямо описаны. Семантическое совпадение не означает, что обычная выдача остатка является нарушением.",
+      "V06": "Текст прямо указывает пересчёт перед возвратом; отсутствие нового упоминания пересчёта при самом возврате не доказывает его пропуск.",
+      "V12": "Отдельная проверка отрицается; подозрительность банкнот не заявлена.",
+      "V15": "Способ возврата не описан. Возврат банкнот сам по себе не сообщает о передаче из рук в руки или обходе передаточного устройства."
+    }
+  },
+  {
+    "id": "safe_door_closed_lock_unobserved",
+    "state": "Кассир закрыл дверцу сейфа и ушёл. Замок и рука возле замка были перекрыты; поворот ключа не наблюдался. Неизвестно, была ли дверца заперта.",
+    "expected": {
+      "V01": "not_described",
+      "V02": "not_described",
+      "V03": "not_described",
+      "V04": "not_described",
+      "V05": "not_described",
+      "V06": "not_described",
+      "V07": "not_described",
+      "V08": "not_described",
+      "parallel_service": "not_described",
+      "V09": "not_described",
+      "V11": "not_described",
+      "V12": "not_described",
+      "V10": "not_described",
+      "bag_unattended": "not_described",
+      "partial_cash_return": "not_described",
+      "V13": "not_described",
+      "V14": "not_described",
+      "V15": "not_described",
+      "safe_open": "not_described",
+      "safe_lock": "uncertain",
+      "safe_key": "not_described",
+      "documents_left": "not_described"
+    },
+    "expectation_notes": {
+      "safe_lock": "Закрытие сейфа и уход прямо описаны, но запирание скрыто: uncertain, а не подтверждение закрытия без запирания.",
+      "safe_open": "Перед уходом дверца закрыта; оставленная открытая дверца текстом исключена.",
+      "V03": "Уход кассира указан без клиентской операции. Не описано ни обслуживание клиента, ни его незавершённость.",
+      "safe_key": "Ключ в наружном замке не наблюдался; перекрытие замка не является признаком оставленного ключа."
+    }
+  },
+  {
+    "id": "cash_count_after_customer_leaves",
+    "state": "Кассир принял у клиента деньги для пересчёта. Клиент явно вышел из помещения до завершения пересчёта. После его ухода кассир продолжил пересчитывать именно принятые от этого клиента деньги; эта последовательность прямо указана в наблюдении.",
+    "expected": {
+      "V01": "not_described",
+      "V02": "not_described",
+      "V03": "not_described",
+      "V04": "described",
+      "V05": "not_described",
+      "V06": "not_described",
+      "V07": "not_described",
+      "V08": "not_described",
+      "parallel_service": "not_described",
+      "V09": "not_described",
+      "V11": "not_described",
+      "V12": "not_described",
+      "V10": "not_described",
+      "bag_unattended": "not_described",
+      "partial_cash_return": "not_described",
+      "V13": "not_described",
+      "V14": "not_described",
+      "V15": "not_described",
+      "safe_open": "not_described",
+      "safe_lock": "not_described",
+      "safe_key": "not_described",
+      "documents_left": "not_described"
+    },
+    "expectation_notes": {
+      "V04": "Явный уход клиента и продолжающийся пересчёт принятых от него денег прямо описаны.",
+      "V03": "Уходит клиент, а кассир остаётся и считает деньги: нельзя заменить действующее лицо.",
+      "V08": "Проверка документов не упомянута; текст не утверждает её пропуск и не перечисляет всю процедуру начала операции.",
+      "V09": "Продолжается операция с деньгами этого клиента, а не пересчёт вне клиентской операции.",
+      "bag_unattended": "Кассир продолжает считать деньги; оставление денег без присмотра не описано.",
+      "V15": "Способ первоначального приёма денег не указан. Факт приёма не доказывает передачу из рук в руки или обход передаточного устройства."
+    }
+  }
+]

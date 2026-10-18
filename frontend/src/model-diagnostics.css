@@ -1,0 +1,110 @@
+.model-diagnostics {
+  margin-top: 24px;
+  padding: 12px 20px;
+  border: 1px solid var(--color-rule);
+  background: var(--color-surface);
+  min-width: 0;
+}
+.diagnostic-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  font: inherit;
+  font-weight: 600;
+  text-align: left;
+  background: none;
+  border: 0;
+  padding: 8px 0;
+  color: inherit;
+}
+.model-diagnostics-dialog {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: calc(100vw - 32px);
+  max-width: 1100px;
+  max-height: calc(100dvh - 32px);
+  transition: none;
+  padding: 0;
+  overflow: hidden;
+  background: var(--color-surface);
+  color: var(--color-ink);
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius-md);
+  box-shadow: 0 12px 40px var(--color-shadow);
+}
+.diagnostic-heading {
+  flex-shrink: 0;
+  padding: 20px 68px 16px 24px;
+  text-align: left;
+  border-bottom: 1px solid var(--color-rule);
+}
+.diagnostic-content {
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 0 24px 20px;
+}
+.diagnostic-content > [role=status] { margin-top: 16px; }
+.diagnostic-note {
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 12px 0;
+  color: var(--color-muted);
+}
+.diagnostic-layers { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
+.diagnostic-layers button,
+.diagnostic-reset,
+.diagnostic-note button,
+.diagnostic-content [role=status] button {
+  font: inherit;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: inherit;
+}
+.diagnostic-layers button[aria-pressed=true] {
+  background: var(--color-accent);
+  color: var(--color-on-accent);
+  border-color: var(--color-accent);
+}
+.diagnostic-toolbar { display: flex; align-items: center; flex-wrap: wrap; gap: 14px; font-size: 13px; margin: 14px 0; }
+.diagnostic-toolbar label { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; max-width: 100%; }
+.diagnostic-toolbar select { font: inherit; max-width: 100%; min-height: 44px; padding: 6px; background: transparent; color: inherit; }
+.diagnostic-toolbar input { max-width: 140px; accent-color: var(--color-accent); }
+.diagnostic-figure { margin: 14px 0; }
+.diagnostic-image {
+  position: relative;
+  /* Match the image's aspect ratio: no letterbox offset for the SVG overlay. */
+  width: min(100%, calc(56dvh * var(--frame-ratio)));
+  max-width: calc(600px * var(--frame-ratio));
+  margin-inline: auto;
+  background: var(--color-graphite);
+  overflow: hidden;
+}
+.diagnostic-image img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.diagnostic-overlay { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.diagnostic-overlay text { font: var(--label-size, 16px) sans-serif; fill: white; stroke: #101914; stroke-width: var(--label-stroke, 3px); paint-order: stroke; stroke-linejoin: round; }
+.diagnostic-box { fill: none; stroke: #ffdf62; stroke-width: 2px; vector-effect: non-scaling-stroke; }
+.diagnostic-bone { stroke: #63ffe1; stroke-width: 2px; vector-effect: non-scaling-stroke; }
+.diagnostic-joint { fill: #ffdf62; stroke: #14201b; stroke-width: 1px; vector-effect: non-scaling-stroke; }
+.diagnostic-mask { fill: #35d9b3; fill-opacity: .35; stroke: #35d9b3; stroke-width: 2px; vector-effect: non-scaling-stroke; }
+.diagnostic-mask.mask-1 { fill: #ffd45c; stroke: #ffd45c; }
+.diagnostic-mask.mask-2 { fill: #7db8ff; stroke: #7db8ff; }
+.diagnostic-figure figcaption, .diagnostic-summary { font-size: 13px; line-height: 1.6; margin-top: 8px; }
+.diagnostic-figure figcaption { text-align: center; color: var(--color-muted); }
+.model-diagnostics button:focus-visible,
+.model-diagnostics-dialog button:focus-visible,
+.diagnostic-toolbar select:focus-visible,
+.diagnostic-toolbar input:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 3px; }
+@media (max-width: 480px) {
+  .model-diagnostics { padding: 8px 12px; }
+  .model-diagnostics-dialog { width: calc(100vw - 16px); max-height: calc(100dvh - 16px); }
+  .diagnostic-heading { padding: 16px 60px 12px 16px; }
+  .diagnostic-content { padding: 0 16px 16px; }
+  .diagnostic-layers { gap: 6px; }
+  .diagnostic-layers button { padding: 8px; font-size: 12px; }
+}

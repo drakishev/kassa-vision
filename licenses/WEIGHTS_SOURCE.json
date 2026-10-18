@@ -1,0 +1,11 @@
+{
+  "verified_at": "2026-10-18",
+  "public_metadata_url": "https://huggingface.co/api/models/Qwen/Qwen3.8-27B/revision/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+  "http_status": 200,
+  "repo": "Qwen/Qwen3.8-27B",
+  "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+  "local_hf_cache_commit_matches": true,
+  "architecture": "Qwen3_5ForConditionalGeneration",
+  "private": false,
+  "gated": false
+}

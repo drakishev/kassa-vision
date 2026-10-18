@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+set -eu
+python3 scripts/check_publication.py --staged
+command -v gitleaks >/dev/null 2>&1 || { echo 'Install gitleaks to run the secret check.' >&2; exit 1; }
+gitleaks git --pre-commit --staged --redact --config .gitleaks.toml

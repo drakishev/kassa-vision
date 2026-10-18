@@ -1,0 +1,86 @@
+[
+  {
+    "filename": "apache-2.0.txt",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "fetched_at_utc": "2026-10-17T11:21:21.523991+00:00"
+  },
+  {
+    "filename": "qwen38_LICENSE.txt",
+    "url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/LICENSE",
+    "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+    "fetched_at_utc": "2026-10-17T11:21:21.993507+00:00"
+  },
+  {
+    "filename": "grounding_dino_LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/IDEA-Research/GroundingDINO/main/LICENSE",
+    "sha256": "b403c98ec1ffaccb0124632592a3d99642cddc3031ca412b402568e6c06c202a",
+    "fetched_at_utc": "2026-10-17T11:21:23.510875+00:00"
+  },
+  {
+    "filename": "mmpose_LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/open-mmlab/mmpose/main/LICENSE",
+    "sha256": "aa2c6f3408169b96e5547c875deb481c91502514c1885fa0acb4b596c8909cb9",
+    "fetched_at_utc": "2026-10-17T11:21:24.981456+00:00"
+  },
+  {
+    "filename": "mmpose_special_licenses.md",
+    "url": "https://raw.githubusercontent.com/open-mmlab/mmpose/main/LICENSES.md",
+    "sha256": "bc4b15244b0c91813cbbadc483325728a078edf13af1c158e0b01c5d4b23f0f0",
+    "fetched_at_utc": "2026-10-17T11:21:32.345876+00:00"
+  },
+  {
+    "filename": "rtmlib_LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/Tau-J/rtmlib/main/LICENSE",
+    "sha256": "ec0a9c27a980866653f5a9901ea0e2458df074b1516e45c6842736ee5c5a4a1c",
+    "fetched_at_utc": "2026-10-17T11:21:32.627223+00:00"
+  },
+  {
+    "filename": "rtmw_cocktail14.md",
+    "url": "https://raw.githubusercontent.com/open-mmlab/mmpose/main/configs/wholebody_2d_keypoint/rtmpose/cocktail14/rtmw_cocktail14.md",
+    "sha256": "2708617c8472208ff9b434c324c3b1c4a0ce66bd8e19051ed98c7cc6934f4161",
+    "fetched_at_utc": "2026-10-17T11:21:33.977877+00:00"
+  },
+  {
+    "filename": "COCO_WholeBody_README.md",
+    "url": "https://raw.githubusercontent.com/jin-s13/COCO-WholeBody/master/README.md",
+    "sha256": "50bd95236f1748cba5ad35aaa62b9dac1fa32d05b08729bc745efefdf20e429b",
+    "fetched_at_utc": "2026-10-17T11:21:37.350743+00:00"
+  },
+  {
+    "filename": "InterHand_LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/facebookresearch/InterHand2.6M/main/LICENSE",
+    "sha256": "336255dc30193e8e15d689d9481bb05673d89055718f3a96923a7ffb99adbbaf",
+    "fetched_at_utc": "2026-10-17T11:21:37.687012+00:00"
+  },
+  {
+    "filename": "supervision_installed_LICENSE.txt",
+    "installed_package": "supervision",
+    "version": "0.25.1",
+    "sha256": "a19ba27cd3953e444e1c8e0234d15987dd44c1f874d23ca21189d030dfef8404"
+  },
+  {
+    "filename": "rtmlib_installed_LICENSE.txt",
+    "installed_package": "rtmlib",
+    "version": "0.0.16",
+    "sha256": "ec0a9c27a980866653f5a9901ea0e2458df074b1516e45c6842736ee5c5a4a1c"
+  },
+  {
+    "filename": "onnxruntime_installed_LICENSE.txt",
+    "installed_package": "onnxruntime",
+    "version": "1.23.2",
+    "sha256": "2f07c72751aed99790b8a4869cf2311df85a860b22ded05fa22803587a48922c"
+  },
+  {
+    "filename": "transformers_installed_LICENSE.txt",
+    "installed_package": "transformers",
+    "version": "5.17.0",
+    "sha256": "77fd4710def9ec3c0f6225800e0235f15a425abd4a8b03559127fcd782612049"
+  },
+  {
+    "filename": "torch_installed_LICENSE.txt",
+    "installed_package": "torch",
+    "version": "2.14.0",
+    "sha256": "bd018feef8825e88181c84eb7e3aa4eafb8f08a20d9fd6ef948569610c4a3e43"
+  }
+]

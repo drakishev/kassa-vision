@@ -1,0 +1,97 @@
+[
+  {
+    "repo": "Qwen/Qwen3.8-27B",
+    "filename": ".gitattributes",
+    "matches": true
+  },
+  {
+    "repo": "Qwen/Qwen3.8-27B",
+    "filename": "LICENSE",
+    "matches": true
+  },
+  {
+    "repo": "Qwen/Qwen3.8-27B",
+    "filename": "README.md",
+    "matches": true
+  },
+  {
+    "repo": "Qwen/Qwen3.8-27B",
+    "filename": "chat_template.jinja",
+    "matches": true
+  },
+  {
+    "repo": "Qwen/Qwen3.8-27B",
+    "filename": "config.json",
+    "matches": true
+  },
+  {
+    "repo": "Qwen/Qwen3.8-27B",
+    "filename": "crc32.txt",
+    "matches": true
+  },
+  {
+    "repo": "Qwen/Qwen3.8-27B",
+    "filename": "generation_config.json",
+    "matches": true
+  },
+  {
+    "repo": "Qwen/Qwen3.8-27B",
+    "filename": "merges.txt",
+    "matches": true
+  },
+  {
+    "repo": "Qwen/Qwen3.8-27B",
+    "filename": "model.safetensors.index.json",
+    "matches": true
+  },
+  {
+    "repo": "Qwen/Qwen3.8-27B",
+    "filename": "preprocessor_config.json",
+    "matches": true
+  },
+  {
+    "repo": "Qwen/Qwen3.8-27B",
+    "filename": "tokenizer_config.json",
+    "matches": true
+  },
+  {
+    "repo": "Qwen/Qwen3.8-27B",
+    "filename": "video_preprocessor_config.json",
+    "matches": true
+  },
+  {
+    "repo": "Qwen/Qwen3.8-27B",
+    "filename": "vocab.json",
+    "matches": true
+  },
+  {
+    "repo": "IDEA-Research/grounding-dino-base",
+    "filename": "config.json",
+    "matches": true
+  },
+  {
+    "repo": "IDEA-Research/grounding-dino-base",
+    "filename": "preprocessor_config.json",
+    "matches": true
+  },
+  {
+    "repo": "IDEA-Research/grounding-dino-base",
+    "filename": "special_tokens_map.json",
+    "matches": true
+  },
+  {
+    "repo": "IDEA-Research/grounding-dino-base",
+    "filename": "tokenizer.json",
+    "matches": true
+  },
+  {
+    "repo": "IDEA-Research/grounding-dino-base",
+    "filename": "tokenizer_config.json",
+    "matches": true
+  },
+  {
+    "repo": "IDEA-Research/grounding-dino-base",
+    "filename": "vocab.txt",
+    "matches": true
+  }
+]

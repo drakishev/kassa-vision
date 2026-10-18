@@ -1,0 +1,9 @@
+# UI, annotation workstation and synthetic tests; no GPU inference packages.
+-r annotation_service/requirements.txt
+python-multipart==0.0.32
+pillow==12.3.0
+numpy==1.26.4
+scipy==1.17.1
+opencv-python==4.11.0.86
+supervision==0.25.1
+matplotlib==3.11.2
